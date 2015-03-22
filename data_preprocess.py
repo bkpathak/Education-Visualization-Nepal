@@ -4,7 +4,6 @@ import csv
 
 with open('levelwise_enrollment.csv', 'r') as csvinput:
     header = next(csvinput).strip() + ",Gender"
-    writer = csv.writer(csvoutput, delimiter = ',')
     print header
     for row in csvinput:
         field = row.strip().split(",")
